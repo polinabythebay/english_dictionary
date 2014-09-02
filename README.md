@@ -20,13 +20,14 @@ Or install it yourself as:
 
 ## Usage
 
-Just run the executable:
 
-```
-	english_dictionary
-```
+```ruby
+require './english_dictionary'
 
-And it will point you to the article.
+EnglishDictionary.load_words()
+EnglishDictionary.is_word("cat") #returns true
+EnglishDictionary.is_word("catr") #returns false
+```
 
 ## Contributing
 

@@ -3,6 +3,29 @@ require "english_dictionary/version"
 # All code in the gem is namespaced under this module.
 module EnglishDictionary
 
-  # The URL of the article about how I start.
-  Url = "http://howistart.org/posts/ruby/1"
+	@@words = {}
+
+	def self.load_words()
+		# words = {}
+		File.open("words.txt") do |file|
+			file.each do |line|
+		 		@@words[line.strip] = true
+			end
+		end
+		# puts "yay I finished"
+	end
+
+	def self.is_word(word)
+		if @@words[word] == true
+			puts "true"
+		else
+			puts "false"
+		end
+	end	
+
 end
+
+
+
+
+
