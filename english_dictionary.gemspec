@@ -9,7 +9,7 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Polina Soshnin"]
   spec.email         = ["me@polina.io"]
   spec.summary       = %q{A simple gem for checking if an english word is in the dictionary.}
-  spec.description   = %q{TODO: Write a longer description. Optional.}
+  spec.description   = %q{This is my first gem and I'm learning how to make one while making a simple yet useful ruby library for my personal projects.}
   spec.homepage      = ""
   spec.license       = "MIT"
 
